@@ -1,0 +1,133 @@
+.unselectable {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+#certificates-title {
+    text-align: center;
+    margin: 30px auto 30px auto;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #41acbc;
+}
+
+.main-container {
+    padding: 0 10%;
+}
+
+/*
+
+Certificates table styling
+
+*/
+
+#certificates-table {
+    font-size: 20px;
+    background: #fff;
+    width: 480px;
+    border-collapse: collapse;
+    text-align: left;
+    margin: auto;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#certificates-table thead {
+    border-bottom: 2px solid #41acbc;
+}
+
+#certificates-table th {
+    padding-bottom: 10px;
+    color: #a4a4a4;
+}
+
+#certificates-table .certificates-row:hover {
+    cursor: pointer;
+    text-shadow: 0.5px 0.5px;
+}
+
+#certificates-table td {
+    padding-bottom: 4px;
+    padding-top: 16px;
+    padding-right: 16px;
+    color: #a4a4a4;
+}
+#certificates-table td a {
+    text-decoration: none;
+    color: #a4a4a4;
+    text-align: center;
+    padding: 5px 10px;
+}
+#certificates-table td a.active {
+    color: #fff;
+    background-color: #41acbc;
+    border-radius: 5px;
+}
+/*
+
+Certificate view styling
+
+Fill in here any CSS needed
+
+*/
+
+#certificate-container {
+    text-align: center;
+}
+
+#certificate-name{
+    font-size: 26px;
+}
+#certificate-image{
+    width: 50%;
+    text-align: right;
+    display: inline;
+    float: left;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+#certificate-image img{
+    width: 200px;
+}
+#certificate-issuer-expires{
+    width: 50%;
+    padding: 0 15px;
+    display: inline-block;
+    text-align: left;
+    float: right;
+    box-sizing: border-box;
+}
+#certificate-issuer h1{
+    margin: 0;
+    font-size: 18px;
+    color:#41acbc;
+    text-decoration: underline;
+}
+#certificate-issuer h2{
+    font-size: 18px;
+}
+
+#certificate-expires h1{
+    font-size: 18px;
+    color:#41acbc;
+    text-decoration: underline;
+}
+#certificate-expires h2{
+    font-size: 18px;
+}
+
+@media(max-width: 800px) {
+    #certificate-image{
+        width: 100%;
+        display:block;
+    }
+    #certificate-image img{
+        width: 100%;
+    }
+    #certificate-issuer-expires{
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+}

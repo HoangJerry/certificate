@@ -1,0 +1,20 @@
+<div ng-controller="CertificateController as certificate">
+  <div id="certificate-container">
+  		<p id="certificate-name">{{certificate.data.name}}</p>
+  		<div id="certificate-image">
+  			<img  src="static/public/assets/images/certificate-icon.png" alt="">
+  		</div>
+  		<div id="certificate-issuer-expires">
+  			<div id="certificate-issuer">
+	  			<h1>Issuer</h1>
+	  			<h2>{{certificate.data.issuer}}</h2>
+	  		</div>
+	  		<div id="certificate-expires">
+	  			<h1>Expiration Date</h1>
+	  			<h2>{{certificate.data.expires | date}}</h2>
+  			</div>
+  		</div>
+  		
+  		
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<div ng-controller="CertificatesController">
+  <table id="certificates-table">
+    <thead>
+    <tr class="unselectable">
+      <th>id</th>
+      <th>name</th>
+      <th>issuer</th>
+      <th>status</th>
+    </tr>
+    </thead>
+    <tr class="certificates-row" ng-repeat="certificate in certificates" >
+      <td ng-click="go(certificate.id)">{{ certificate.id }}</a></td>
+      <td ng-click="go(certificate.id)">{{ certificate.name }}{{ certificate.expires}}</td>
+      <td ng-click="go(certificate.id)">{{ certificate.issuer }}{{lastday}}</td>
+      <td><a class="{{certificate.expires > thatday ?'':'active'}}" ng-click="status($event,certificate)">{{ certificate.expires > thatday ?"Valid":"Renew" }}</a></td>
+    </tr>
+  </table>
+</div>
